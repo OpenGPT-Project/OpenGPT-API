@@ -4,7 +4,7 @@ class OpenGPT:
     def __init__(self):
         self.base_url = "http://api.opengpt-project.org"
 
-    def make_request(self, user_input):
+    def openai_default(self, user_input):
         endpoint = f"{self.base_url}/api/openai/default"
         data = {"user_input": user_input}
 
